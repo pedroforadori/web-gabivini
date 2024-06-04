@@ -20,7 +20,7 @@ export default function Menu() {
           <List color="#005D86" size={32} onClick={openMenu} />
         )}
       </div>
-      <nav className="absolute left-0 top-[40%] ml-4 max-sm:hidden ">
+      <nav className="left-0 top-[40%] ml-4 max-sm:hidden fixed">
         <ul className="text-marinho font-light cursor-pointer">
           <Link href="/">
             <li className="mb-8 hover:font-normal">HOME</li>
