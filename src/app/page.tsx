@@ -8,7 +8,7 @@ export default function Home() {
       <div className="max-sm:flex max-sm:items-start max-sm:w-full max-sm:p-2">
         <Menu />
       </div>
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center mt-[-3rem] max-sm:mt-0">
         {/* <div className="text-right z-10 relative top-[-2rem] left-24 tracking-wider max-sm:right-0 max-sm:left-0">
           <div className="text-marinho text-[10rem] mt-10 mb-9 max-sm:text-4xl font-modernSymphony">
             Gabriela &
