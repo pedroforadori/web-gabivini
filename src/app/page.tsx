@@ -4,11 +4,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="bg-white min-h-screen w-full justify-start flex flex-col items-center bg-no-repeat max-sm:bg-left">
-      <div className="max-sm:flex max-sm:items-start max-sm:w-full max-sm:p-2">
+    <div className="bg-white min-h-screen w-full justify-start flex flex-col items-center bg-no-repeat max-sm:bg-left max-sm:mt-[-3rem]">
+      {/* <div className="max-sm:flex max-sm:items-start max-sm:w-full max-sm:p-2">
         <Menu />
-      </div>
-      <div className="flex flex-col items-center mt-[-3rem] max-sm:mt-0">
+      </div> */}
+      <div className="flex flex-col items-center mt-[-3rem] max-sm:mt-10">
         {/* <div className="text-right z-10 relative top-[-2rem] left-24 tracking-wider max-sm:right-0 max-sm:left-0">
           <div className="text-marinho text-[10rem] mt-10 mb-9 max-sm:text-4xl font-modernSymphony">
             Gabriela &

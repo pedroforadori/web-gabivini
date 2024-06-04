@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "phosphor-react": "^1.4.1",
     "react": "^18",
