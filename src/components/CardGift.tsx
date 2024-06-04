@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CardGift() {
   return (
-    <div className="text-telha w-[70%] h-auto flex flex-wrap gap-4 my-4 ml-24">
+    <div className="text-telha w-[60%] h-auto flex flex-wrap gap-4 my-4">
       {listGift.map((item) => (
         <div
           key={item.id}
