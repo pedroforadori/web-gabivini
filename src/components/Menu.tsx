@@ -28,7 +28,10 @@ export default function Menu() {
           <Link href="/gifts">
             <li className="mb-8 hover:font-normal">LISTA DE PRESENTES</li>
           </Link>
-          <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
+          <Link href="/confirm" onClick={() => setIsOpen(false)}>
+            <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
+          </Link>
+
           <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
         </ul>
       </nav>
@@ -39,16 +42,19 @@ export default function Menu() {
             // initial={{ y: 10 }}
             // animate={{ y: 0 }}
           > */}
-            <ul className="text-marinho font-light cursor-pointer ">
-              <Link href="/" onClick={() => setIsOpen(false)}>
-                <li className="mb-8 hover:font-normal">HOME</li>
-              </Link>
-              <Link href="/gifts" onClick={() => setIsOpen(false)}>
-                <li className="mb-8 hover:font-normal">LISTA DE PRESENTES</li>
-              </Link>
+          <ul className="text-marinho font-light cursor-pointer ">
+            <Link href="/" onClick={() => setIsOpen(false)}>
+              <li className="mb-8 hover:font-normal">HOME</li>
+            </Link>
+            <Link href="/gifts" onClick={() => setIsOpen(false)}>
+              <li className="mb-8 hover:font-normal">LISTA DE PRESENTES</li>
+            </Link>
+            <Link href="/confirm" onClick={() => setIsOpen(false)}>
               <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
-              <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
-            </ul>
+            </Link>
+
+            <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
+          </ul>
           {/* </motion.div> */}
         </nav>
       )}
