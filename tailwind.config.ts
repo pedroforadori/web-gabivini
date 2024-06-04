@@ -9,11 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "main": "url('/public/bg.jpg')"
       },
     },
+    colors: {
+      "white": "#FFFFFF",
+      "offwhite": "#F5E8E2",
+      "blush": "#CD8062",
+      "telha": "#B66027",
+      "terracota": "#9E4825",
+      "marinho": "#005D86"
+    }
   },
   plugins: [],
 };
