@@ -8,22 +8,28 @@ export default function Home() {
       <div className="max-sm:flex max-sm:items-start max-sm:w-full max-sm:p-2">
         <Menu />
       </div>
-      <div className="text-right z-10 absolute top-10 right-48 tracking-wider max-sm:right-0">
-        <div className="text-marinho text-7xl mt-12 mb-9 max-sm:text-4xl font-light">
-          GABRIELA &
+      <div className="flex flex-col items-center">
+        {/* <div className="text-right z-10 relative top-[-2rem] left-24 tracking-wider max-sm:right-0 max-sm:left-0">
+          <div className="text-marinho text-[10rem] mt-10 mb-9 max-sm:text-4xl font-modernSymphony">
+            Gabriela &
+          </div>
+          <div className="text-marinho text-[10rem] mb-9 max-sm:text-4xl font-light mt-[-10rem] font-modernSymphony">
+            Vinicius
+          </div>
+        </div> */}
+        <div className="text-right max-sm:right-0 max-sm:left-0 z-10">
+          <div className="text-marinho text-[10rem] max-sm:text-8xl max-sm:mb-4 font-modernSymphony">
+            Gabriela & Vinicius
+          </div>
         </div>
-        <div className="text-marinho text-7xl mb-9 max-sm:text-4xl font-light mt-[-30px]">
-          VINICIUS
-        </div>
+        <Image
+          className=" max-sm:mt-0"
+          src={require("../../public/imageMain.png")}
+          alt="imagem principal"
+          width={400}
+          quality={100}
+        />
       </div>
-      <Image
-        className="mt-10 max-sm:mt-0"
-        src={require("../../public/imageMain.png")}
-        alt="imagem principal"
-        width={500}
-        quality={100}
-      ></Image>
-
       <div className="text-marinho text-xl font-light">
         <Countdown />
       </div>

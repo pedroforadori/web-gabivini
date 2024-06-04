@@ -19,6 +19,9 @@ const config: Config = {
       "telha": "#B66027",
       "terracota": "#9E4825",
       "marinho": "#005D86"
+    },
+    fontFamily: {
+      'modernSymphony': ['ModernSymphony', 'sans-serif']
     }
   },
   plugins: [],

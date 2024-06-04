@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+@font-face {
+  font-family: 'ModernSymphony';
+  src: url("../../public/fonts/modern-symphony-script-regular.ttf");
+}

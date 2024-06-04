@@ -22,7 +22,7 @@ export default function Menu() {
         <ul className="text-marinho font-light cursor-pointer">
           <li className="mb-8 hover:font-normal">HOME</li>
           <li className="mb-8 hover:font-normal">LISTA DE PRESENTES</li>
-          <li className="mb-8 hover:font-normal">CONFIRME SUA PRERSENÇA</li>
+          <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
           <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
         </ul>
       </nav>
@@ -31,7 +31,7 @@ export default function Menu() {
           <ul className="text-marinho font-light cursor-pointer ">
             <li className="mb-8 mt-8 hover:font-normal">HOME</li>
             <li className="mb-8 hover:font-normal">LISTA DE PRESENTES</li>
-            <li className="mb-8 hover:font-normal">CONFIRME SUA PRERSENÇA</li>
+            <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
             <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
           </ul>
         </nav>
