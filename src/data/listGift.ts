@@ -114,7 +114,7 @@ export default [
     },
     {
         id: 16,
-        image: '/image-gift/diaria-art-animation.jpg',
+        image: '/image-gift/hollywood-studios.jpg',
         resume: "Conhecer o Hollywood Studios",
         buy: 'https://mpago.la/1akV3yW',
         value: 'R$ 850,00'
