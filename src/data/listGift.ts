@@ -93,21 +93,21 @@ export default [
     },
     {
         id: 13,
-        image: '/image-gift/diaria-art-animation.jpg',
+        image: '/image-gift/presente-gabi.jpeg',
         resume: "Dolares para a Gabi comprar canetas no outlet",
         buy: 'https://mpago.la/1iENrP5',
         value: 'R$ 200,00'
     },
     {
         id: 14,
-        image: '/image-gift/diaria-art-animation.jpg',
+        image: '/image-gift/tenis-vini.jpeg',
         resume: "Dolares para o Vini comprar tenis no outlet",
         buy: 'https://mpago.la/2F7S9AX',
         value: 'R$ 209,00'
     },
     {
         id: 15,
-        image: '/image-gift/diaria-art-animation.jpg',
+        image: '/image-gift/tiara-minnie.jpeg',
         resume: "Comprar Tiarinha da Minnie Noivinha para Gabi",
         buy: 'https://mpago.la/2Mnf8m2',
         value: 'R$ 149,00'

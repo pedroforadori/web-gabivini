@@ -47,17 +47,18 @@ export default function CardGift() {
 
   return (
     <>
-      <div className="text-telha w-[60%] h-auto flex flex-wrap gap-4 my-4">
+      <div className="text-telha h-auto flex flex-wrap gap-4 my-4 w-3/5 justify-center items-center max-lg:w-1/2">
         {listGift.map((item) => (
           <div
             key={item.id}
-            className="border p-4 flex flex-col justify-center items-center gap-7"
+            className="border p-4 px-8 flex flex-col gap-7 justify-center items-center max-sm:px-14"
           >
             <Image
               src={item.image}
               alt={item.resume}
               height={250}
               width={200}
+              className="min-h-32 max-h-32"
             />
             <div className="max-w-48 min-h-14 max-h-14 text-center">
               {item.resume}
@@ -71,7 +72,7 @@ export default function CardGift() {
                 variant="flat"
                 color="warning"
                 onPress={() => handleOpen(b)}
-                className="bg-terracota px-6 py-3"
+                className="bg-terracota px-10 py-6 max-sm:px-14 max-sm:py-6"
               >
                 <p
                   className="text-offwhite"
