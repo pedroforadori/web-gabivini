@@ -128,7 +128,7 @@ export default function CardGift() {
                   onPress={onClose}
                   isDisabled={buttonMessage}
                 >
-                  <Link href={`${urlBuy}`}>Continuar</Link>
+                  <Link target="_blank" href={`${urlBuy}`}>Continuar</Link>
                 </Button>
               </ModalFooter>
             </>
