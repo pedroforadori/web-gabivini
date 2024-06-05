@@ -31,6 +31,7 @@ export default function CardGift() {
   const confirmGuest = () => {};
 
   function buyStepOne(dataUrl: any) {
+    debugger
     console.log("data", dataUrl);
     setUrlBuy(dataUrl);
   }
@@ -87,7 +88,7 @@ export default function CardGift() {
         ))}
       </div>
       <div className="flex flex-wrap gap-3"></div>
-      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose}>
+      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} placement="top-center">
         <ModalContent>
           {(onClose) => (
             <>
