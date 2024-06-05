@@ -9,42 +9,42 @@ export default [
     },
     {
         id: 1,
-        image: '/image-gift/balada-florida.jpg',
+        image: '/image-gift/estadia-orlando.jpg',
         resume: '1 Estadia em Orlando',
         buy: 'https://mpago.la/2q5yPPA',
         value: 'R$ 289,00'
     },
     {
         id: 2,
-        image: '/image-gift/balada-florida.jpg',
+        image: '/image-gift/club-miami.jpg',
         resume: 'Night Club em Miami',
         buy: 'https://mpago.la/2R2qeZP',
         value: 'R$ 200,00'
     },
     {
         id: 3,
-        image: '/image-gift/balada-florida.jpg',
+        image: '/image-gift/magic-kingdon.jpg',
         resume: 'Fireworks Magic Kingdom',
         buy: 'https://mpago.la/23HgRnj',
         value: 'R$ 500,00'
     },
     {
         id: 4,
-        image: '/image-gift/balada-florida.jpg',
+        image: '/image-gift/universal-studios.jpg',
         resume: 'Almoço na Universal Studios',
         buy: 'https://mpago.la/2ukMkss',
         value: 'R$ 159,00'
     },
     {
         id: 5,
-        image: '/image-gift/balada-florida.jpg',
+        image: '/image-gift/outlet-miami.jpg',
         resume: 'Comprinhas nos outlets de Miami',
         buy: 'https://mpago.la/1nDqixz',
         value: 'R$ 299,00'
     },
     {
         id: 6,
-        image: '/image-gift/balada-florida.jpg',
+        image: '/image-gift/outlet-miami.jpg',
         resume: 'Comprinhas nos outlets de Orlando',
         buy: 'https://mpago.la/2wmGdaz',
         value: 'R$ 499,00'
@@ -79,63 +79,56 @@ export default [
     },
     {
         id: 11,
-        image: '/image-gift/diaria-art-animation.jpg',
+        image: '/image-gift/animal-kingdom.jpg',
         resume: "Conhecer o Animal Kingdon",
         buy: 'https://pag.ae/7ZmTcmB4p',
         value: 'R$ 490,00'
     },
     {
         id: 12,
-        image: '/image-gift/diaria-art-animation.jpg',
-        resume: "Conhecer o Animal Kingdon",
-        buy: 'https://mpago.la/2KwvJpR',
-        value: 'R$ 490,00'
-    },
-    {
-        id: 13,
-        image: '/image-gift/diaria-art-animation.jpg',
+        image: '/image-gift/epcot.jpg',
         resume: "Conhecer o Epcot",
         buy: 'https://mpago.la/1Ex6yD4',
         value: 'R$ 510,00'
     },
     {
-        id: 14,
+        id: 13,
         image: '/image-gift/diaria-art-animation.jpg',
         resume: "Dolares para a Gabi comprar canetas no outlet",
         buy: 'https://mpago.la/1iENrP5',
         value: 'R$ 200,00'
     },
     {
-        id: 15,
+        id: 14,
         image: '/image-gift/diaria-art-animation.jpg',
         resume: "Dolares para o Vini comprar tenis no outlet",
         buy: 'https://mpago.la/2F7S9AX',
         value: 'R$ 209,00'
     },
     {
-        id: 16,
+        id: 15,
         image: '/image-gift/diaria-art-animation.jpg',
         resume: "Comprar Tiarinha da Miine Noivinha para Gabi",
         buy: 'https://mpago.la/2Mnf8m2',
         value: 'R$ 149,00'
     },
     {
-        id: 17,
+        id: 16,
         image: '/image-gift/diaria-art-animation.jpg',
         resume: "Conhecer o Hollywood Studios",
         buy: 'https://mpago.la/1akV3yW',
         value: 'R$ 850,00'
     },
     {
-        id: 18,
-        image: '/image-gift/diaria-art-animation.jpg',
+        id: 17,
+        image: '/image-gift/locar-carro.jpg',
         resume: "Diária Aluguel do Carro",
         buy: 'https://mpago.la/2hA2Srb',
         value: 'R$ 1.000,00'
     },
     {
-        id: 19,
-        image: '/image-gift/diaria-art-animation.jpg',
+        id: 18,
+        image: '/image-gift/universal-islands.jpg',
         resume: "Conhecer o Island Adventure",
         buy: 'https://mpago.la/222gDpR',
         value: 'R$ 640,00'
