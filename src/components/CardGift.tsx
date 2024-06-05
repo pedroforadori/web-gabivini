@@ -19,6 +19,7 @@ export default function CardGift() {
   const [name, setName] = useState<string | any>();
   const [message, setMessage] = useState<string | any>();
   const [urlBuy, setUrlBuy] = useState<string | any>();
+  const [buttonMessage, setButtonMessage] = useState(true)
 
   const backdrops = ["blur"];
 
@@ -33,6 +34,16 @@ export default function CardGift() {
     console.log("data", dataUrl);
     setUrlBuy(dataUrl);
   }
+ 
+  function keyMessage(event: any, name: any){
+    setMessage(event.target.value)
+
+    if(event.target.value.length > 20 && name.length > 3) {
+      setButtonMessage(false)
+    } else {
+      setButtonMessage(true)
+    }
+  } 
 
   return (
     <>
@@ -97,7 +108,7 @@ export default function CardGift() {
                             max-sm:w-full max-sm:mt-2"
                     placeholder="Sua Mensagem"
                     value={message}
-                    onChange={(event) => setMessage(event.target.value)}
+                    onChange={(event) => keyMessage(event, name)}
                   />
                 </form>
               </ModalBody>
@@ -112,13 +123,9 @@ export default function CardGift() {
                 <Button
                   className="bg-terracota text-offwhite"
                   onPress={onClose}
-    
+                  isDisabled={buttonMessage}
                 >
-                  {/* {name.length < 5 && message.length < 30 ? (
-                    <Link href={""}>Continuar</Link>
-                  ) : ( */}
-                    <Link href={`${urlBuy}`}>Continuar</Link>
-                  {/* )} */}
+                  <Link href={`${urlBuy}`}>Continuar</Link>
                 </Button>
               </ModalFooter>
             </>
