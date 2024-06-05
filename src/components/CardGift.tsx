@@ -86,8 +86,8 @@ export default function CardGift() {
         backdrop={backdrop}
         isOpen={isOpen}
         onClose={onClose}
-        placement="center"
-        className="mb-5"
+        placement="top-center"
+        className="mt-32"
       >
         <ModalContent>
           {(onClose) => (
