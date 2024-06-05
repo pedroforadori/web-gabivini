@@ -108,7 +108,7 @@ export default [
     {
         id: 15,
         image: '/image-gift/diaria-art-animation.jpg',
-        resume: "Comprar Tiarinha da Miine Noivinha para Gabi",
+        resume: "Comprar Tiarinha da Minnie Noivinha para Gabi",
         buy: 'https://mpago.la/2Mnf8m2',
         value: 'R$ 149,00'
     },
