@@ -93,8 +93,8 @@ export default function CardGift() {
           {(onClose) => (
             <>
               <ModalHeader className="flex flex-col gap-1 text-terracota">
+                <p className="text-white text-sm">{urlBuy}</p>
                 Deixe sua mensagem
-                {urlBuy}
               </ModalHeader>
               <ModalBody>
                 <form className="flex flex-col">
@@ -129,7 +129,9 @@ export default function CardGift() {
                   onPress={onClose}
                   isDisabled={buttonMessage}
                 >
-                  <Link target="_blank" href={`${urlBuy}`}>Continuar</Link>
+                  <Link target="_blank" href={`${urlBuy}`}>
+                    Continuar
+                  </Link>
                 </Button>
               </ModalFooter>
             </>
