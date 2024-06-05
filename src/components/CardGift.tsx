@@ -65,7 +65,7 @@ export default function CardGift() {
             <div className="max-w-48 min-h-14 max-h-14 text-center">
               {item.resume}
             </div>
-            <div>{item.value}</div>
+            <div className="text-xl">{item.value}</div>
             {backdrops.map((b) => (
               <Button
                 key={b}
@@ -94,6 +94,7 @@ export default function CardGift() {
             <>
               <ModalHeader className="flex flex-col gap-1 text-terracota">
                 Deixe sua mensagem
+                {urlBuy}
               </ModalHeader>
               <ModalBody>
                 <form className="flex flex-col">
