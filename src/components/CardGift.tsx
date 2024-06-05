@@ -12,6 +12,7 @@ import {
   useDisclosure,
 } from "@nextui-org/react";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function CardGift() {
   const { isOpen, onOpen, onClose, getButtonProps } = useDisclosure();
@@ -19,32 +20,32 @@ export default function CardGift() {
   const [name, setName] = useState<string | any>();
   const [message, setMessage] = useState<string | any>();
   const [urlBuy, setUrlBuy] = useState<string | any>();
-  const [buttonMessage, setButtonMessage] = useState(true)
+  const [buttonMessage, setButtonMessage] = useState(true);
+  const router = useRouter();
 
   const backdrops = ["blur"];
 
-  const handleOpen = (backdrop: any) => {
+  const handleOpen = (backdrop: any, dataUrl: any) => {
     setBackdrop(backdrop);
     onOpen();
+
+    buyStepOne(dataUrl);
   };
 
-  const confirmGuest = () => {};
-
   function buyStepOne(dataUrl: any) {
-    debugger
     console.log("data", dataUrl);
     setUrlBuy(dataUrl);
   }
- 
-  function keyMessage(event: any, name: any){
-    setMessage(event.target.value)
 
-    if(event.target.value.length > 20 && name.length > 3) {
-      setButtonMessage(false)
+  function keyMessage(event: any, name: any) {
+    setMessage(event.target.value);
+
+    if (event.target.value.length > 20 && name.length > 3) {
+      setButtonMessage(false);
     } else {
-      setButtonMessage(true)
+      setButtonMessage(true);
     }
-  } 
+  }
 
   return (
     <>
@@ -65,30 +66,27 @@ export default function CardGift() {
               {item.resume}
             </div>
             <div>{item.value}</div>
-            {/* <Link href={item.buy} className="bg-terracota px-6 py-3"> */}
-            {/* <p className="text-offwhite">{item.value}</p> */}
             {backdrops.map((b) => (
               <Button
                 key={b}
                 variant="flat"
                 color="warning"
-                onPress={() => handleOpen(b)}
-                className="bg-terracota px-10 py-6 max-sm:px-14 max-sm:py-6"
+                onPress={() => handleOpen(b, item.buy)}
+                className="bg-terracota px-10 py-6 max-sm:px-14 max-sm:py-6 text-offwhite"
               >
-                <p
-                  className="text-offwhite"
-                  onClick={() => buyStepOne(item.buy)}
-                >
-                  COMPRAR
-                </p>
+                COMPRAR
               </Button>
             ))}
-            {/* </Link> */}
           </div>
         ))}
       </div>
       <div className="flex flex-wrap gap-3"></div>
-      <Modal backdrop={backdrop} isOpen={isOpen} onClose={onClose} placement="top-center">
+      <Modal
+        backdrop={backdrop}
+        isOpen={isOpen}
+        onClose={onClose}
+        placement="center"
+      >
         <ModalContent>
           {(onClose) => (
             <>
@@ -96,7 +94,7 @@ export default function CardGift() {
                 Deixe sua mensagem
               </ModalHeader>
               <ModalBody>
-                <form className="flex flex-col " onSubmit={confirmGuest}>
+                <form className="flex flex-col">
                   <input
                     className="h-16 pl-3 text-terracota text-2xl border-b border-b-terracota font-bold placeholder:text-terracota placeholder:font-bold  placeholder:text-2xl focus:outline-none 
                             max-sm:w-full max-sm:mt-2"
