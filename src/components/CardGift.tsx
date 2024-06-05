@@ -98,6 +98,7 @@ export default function CardGift() {
               <ModalBody>
                 <form className="flex flex-col">
                   <input
+                    autoFocus={true}
                     className="h-16 pl-3 text-terracota text-2xl border-b border-b-terracota font-bold placeholder:text-terracota placeholder:font-bold  placeholder:text-2xl focus:outline-none 
                             max-sm:w-full max-sm:mt-2"
                     type="text"
