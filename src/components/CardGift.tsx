@@ -72,11 +72,12 @@ export default function CardGift() {
                 variant="flat"
                 color="warning"
                 onPress={() => handleOpen(b, item.buy)}
-                className="bg-terracota px-10 py-6 max-sm:px-14 max-sm:py-6 text-offwhite"
+                className="bg-terracota px-10 py-6 max-sm:px-14 max-sm:py-6"
               >
-                COMPRAR
+                <p className="text-offwhite">COMPRAR</p>
               </Button>
             ))}
+            {/* </Link> */}
           </div>
         ))}
       </div>
@@ -86,6 +87,7 @@ export default function CardGift() {
         isOpen={isOpen}
         onClose={onClose}
         placement="center"
+        className="mb-5"
       >
         <ModalContent>
           {(onClose) => (
