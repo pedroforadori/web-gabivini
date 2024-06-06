@@ -64,7 +64,7 @@ export default function Confirm() {
         <div className="w-full flex flex-row mt-10 justify-center max-sm:px-2">
           <form className="text-black max-sm:flex-col" onSubmit={confirmGuest}>
             <input
-              className="w-48 h-16 mr-8 pl-3 text-terracota text-2xl border-b border-b-terracota font-bold placeholder:text-terracota placeholder:font-bold  placeholder:text-2xl focus:outline-none 
+              className="w-48 h-16 mr-8 pl-3 text-terracota text-2xl border-b border-b-terracota font-light placeholder:text-terracota placeholder:font-light  placeholder:text-2xl focus:outline-none 
                             max-sm:w-full max-sm:mt-2"
               type="text"
               placeholder="Seu Nome"
@@ -73,7 +73,7 @@ export default function Confirm() {
             />
             <InputMask
               mask="(99) 99999-9999"
-              className="w-48 h-16 mr-8 pl-3 text-terracota text-2xl border-b border-b-terracota font-bold placeholder:text-terracota  placeholder:font-bold placeholder:text-2xl focus:outline-none
+              className="w-48 h-16 mr-8 pl-3 text-terracota font-light text-2xl border-b border-b-terracota placeholder:text-terracota  placeholder:font-light placeholder:text-2xl focus:outline-none
                             max-sm:w-full max-sm:mt-2"
               type="text"
               placeholder="Seu Celular"
@@ -81,7 +81,7 @@ export default function Confirm() {
               onChange={(event) => setPhone(event.target.value)}
             />
             <button
-              className="w-32 h-20 bg-offwhite text-terracota text-2xl font-bold hover:bg-wedding-100 hover:text-black max-sm:w-full max-sm:mt-4 shadow-2xl rounded-xl"
+              className="w-32 h-20 bg-offwhite text-terracota text-2xl font-light hover:bg-wedding-100 hover:text-black max-sm:w-full max-sm:mt-4 shadow-2xl rounded-xl"
               type="submit"
             >
               Eu vou
@@ -91,7 +91,7 @@ export default function Confirm() {
         <div className="flex justify-arround items-center mt-10">
           {confirmed && (
             <p
-              className="text-4xl text-terracota text-bold font-bold flex justify-center text-justify w-full
+              className="text-4xl text-terracota font-light flex justify-center text-justify w-full
                         max-sm:mt-2  max-sm:text-2xl max-sm:text-wedding-500"
             >
               {confirmed}

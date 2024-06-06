@@ -13,7 +13,7 @@ export default function Home() {
           <div className="text-marinho text-[10rem] max-sm:text-8xl max-sm:mb-4 font-modernSymphony">
             Gabriela & Vinicius
           </div>
-          <div className="text-marinho text-xs font-light mb-4 text-justify max-sm:my-8 max-sm:mx-4">
+          <div className="text-marinho text-[10px] font-light mb-4 text-justify max-sm:my-8 max-sm:mx-12">
             {`"Deus mudou o teu caminho até juntares com o meu e guardou a tua vida separando-a para mim. Para onde fores, irei; onde tu repousares, repousarei. Teu Deus será o meu Deus. Teu caminho o meu será." (Rute 1:16-18)`}
           </div>
         </div>
