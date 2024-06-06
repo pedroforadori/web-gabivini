@@ -3,7 +3,7 @@ import { FormEvent, useEffect, useState } from "react";
 import InputMask from "react-input-mask";
 
 import { collection, addDoc, getDocs, where, query } from "firebase/firestore";
-import { firestore } from "../../firebase";
+import { firestore } from "../../lib/firebase";
 
 interface IGuest {
   name: string;

@@ -13,14 +13,16 @@ import {
 } from "@nextui-org/react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import emailjs from "@emailjs/browser";
 
 export default function CardGift() {
   const { isOpen, onOpen, onClose, getButtonProps } = useDisclosure();
   const [backdrop, setBackdrop] = useState<any>("opaque");
-  const [name, setName] = useState<string | any>();
-  const [message, setMessage] = useState<string | any>();
-  const [urlBuy, setUrlBuy] = useState<string | any>();
+  const [name, setName] = useState<string | any>("");
+  const [message, setMessage] = useState<string | any>("");
+  const [urlBuy, setUrlBuy] = useState<string | any>("");
   const [buttonMessage, setButtonMessage] = useState(true);
+  const [emailSucess, setEmailSucess] = useState<string | any>("");
   const router = useRouter();
 
   const backdrops = ["blur"];
@@ -30,6 +32,7 @@ export default function CardGift() {
     onOpen();
 
     buyStepOne(dataUrl);
+
   };
 
   function buyStepOne(dataUrl: any) {
@@ -45,6 +48,33 @@ export default function CardGift() {
     } else {
       setButtonMessage(true);
     }
+  }
+
+  function sendEmail(name: any, message: any) {
+    const templateParams = {
+      from_name: name,
+      message: message,
+    };
+    debugger;
+    emailjs
+      .send(
+        "service_qdwshf3",
+        "template_9ppg5yd",
+        templateParams,
+        "MFbD2ajLKt4rITDg9"
+      )
+      .then(
+        (response) => {
+          setName("");
+          setMessage("");
+          setEmailSucess("Mensagem enviado com sucesso!")
+
+          router.push(`${urlBuy}`)
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
   }
 
   return (
@@ -114,6 +144,13 @@ export default function CardGift() {
                     value={message}
                     onChange={(event) => keyMessage(event, name)}
                   />
+                  <p className="text-terracota">
+                    {message?.length == ""
+                      ? ""
+                      : message?.length > 20
+                      ? ""
+                      : `${message?.length} / 20 caracteres restantes`}
+                  </p>
                 </form>
               </ModalBody>
               <ModalFooter>
@@ -129,9 +166,9 @@ export default function CardGift() {
                   onPress={onClose}
                   isDisabled={buttonMessage}
                 >
-                  <Link target="_blank" href={`${urlBuy}`}>
-                    Continuar
-                  </Link>
+                  {/* <Link href={}> */}
+                    <p onClick={() => sendEmail(name, message)}>Continuar</p>
+                  {/* </Link> */}
                 </Button>
               </ModalFooter>
             </>
