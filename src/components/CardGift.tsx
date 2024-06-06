@@ -23,6 +23,7 @@ export default function CardGift() {
   const [urlBuy, setUrlBuy] = useState<string | any>("");
   const [buttonMessage, setButtonMessage] = useState(true);
   const [emailSucess, setEmailSucess] = useState<string | any>("");
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
 
   const backdrops = ["blur"];
@@ -32,7 +33,6 @@ export default function CardGift() {
     onOpen();
 
     buyStepOne(dataUrl);
-
   };
 
   function buyStepOne(dataUrl: any) {
@@ -55,7 +55,8 @@ export default function CardGift() {
       from_name: name,
       message: message,
     };
-    debugger;
+    setLoading(true);
+    setButtonMessage(true);
     emailjs
       .send(
         "service_qdwshf3",
@@ -67,9 +68,11 @@ export default function CardGift() {
         (response) => {
           setName("");
           setMessage("");
-          setEmailSucess("Mensagem enviado com sucesso!")
+          setLoading(false);
+          setButtonMessage(false);
+          setEmailSucess("Mensagem enviado com sucesso!");
 
-          router.push(`${urlBuy}`)
+          router.push(`${urlBuy}`);
         },
         (error) => {
           console.log(error);
@@ -166,10 +169,16 @@ export default function CardGift() {
                   onPress={() => sendEmail(name, message)}
                   isDisabled={buttonMessage}
                 >
-                  {/* <Link href={}> */}
-                    {/* <p onClick={() => sendEmail(name, message)}>Continuar</p> */}
-                  {/* </Link> */}
-                  Continuar
+                  {loading ? (
+                    <Image
+                      src={require("../../public/loader.gif")}
+                      alt="heart"
+                      width={25}
+                      height={25}
+                    />
+                  ) : (
+                    `Continuar`
+                  )}
                 </Button>
               </ModalFooter>
             </>
