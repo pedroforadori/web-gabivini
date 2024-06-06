@@ -163,12 +163,13 @@ export default function CardGift() {
                 </Button>
                 <Button
                   className="bg-terracota text-offwhite"
-                  onPress={onClose}
+                  onPress={() => sendEmail(name, message)}
                   isDisabled={buttonMessage}
                 >
                   {/* <Link href={}> */}
-                    <p onClick={() => sendEmail(name, message)}>Continuar</p>
+                    {/* <p onClick={() => sendEmail(name, message)}>Continuar</p> */}
                   {/* </Link> */}
+                  Continuar
                 </Button>
               </ModalFooter>
             </>
