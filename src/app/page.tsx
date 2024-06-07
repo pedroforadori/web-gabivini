@@ -8,7 +8,7 @@ export default function Home() {
       {/* <div className="max-sm:flex max-sm:items-start max-sm:w-full max-sm:p-2">
         <Menu />
       </div> */}
-      <div className="w-2/5 flex flex-col items-center mt-[-3rem]  max-sm:w-full">
+      <div className="w-2/5 flex flex-col items-center  max-sm:w-full">
         <div className="text-center max-sm:right-0 max-sm:left-0 z-10">
           <div className="text-marinho text-[10rem] max-lg:text-8xl max-xl:text-8xl max-2xl:text-8xl max-2xl:mb-4 max-lg:mb-4 max-sm:text-8xl max-sm:mb-4 font-modernSymphony">
             Gabriela & Vinicius

@@ -8,13 +8,6 @@ export default [
         value: 'R$ 230,00'
     },
     {
-        id: 1,
-        image: '/image-gift/estadia-orlando.jpg',
-        resume: '1 Estadia em Orlando',
-        buy: 'https://mpago.la/2q5yPPA',
-        value: 'R$ 289,00'
-    },
-    {
         id: 2,
         image: '/image-gift/club-miami.jpg',
         resume: 'Night Club em Miami',
