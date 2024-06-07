@@ -115,7 +115,7 @@ export default [
     {
         id: 17,
         image: '/image-gift/locar-carro.jpg',
-        resume: "Diária Aluguel do Carro",
+        resume: "Aluguel do Carro",
         buy: 'https://mpago.la/1hihut8',
         value: 'R$ 3.580,00'
     },
