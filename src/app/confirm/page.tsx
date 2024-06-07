@@ -13,7 +13,7 @@ interface IGuest {
 export default function Confirm() {
   const [name, setName] = useState<string>();
   const [phone, setPhone] = useState<string>();
-  const [confirmed, setConfirmed] = useState<string>("");
+  const [confirmed, setConfirmed] = useState<string>("Presença confirmada. Esperamos você!");
 
   async function confirmGuest(event: FormEvent) {
     event.preventDefault();
@@ -61,7 +61,7 @@ export default function Confirm() {
       <h1 className="text-offwhite text-8xl bg-terracota text-center max-sm:mt-7 font-modernSymphony">
         Confirme sua presença aqui!
       </h1>
-      <div className="flex justify-center items-center">
+      <div className="flex justify-center items-center flex-col">
         <div className="w-full flex flex-row mt-10 justify-center max-sm:px-2">
           <form className="text-black max-sm:flex-col" onSubmit={confirmGuest}>
             <input
@@ -88,6 +88,7 @@ export default function Confirm() {
               Eu vou
             </button>
           </form>
+          
         </div>
         <div className="flex justify-arround items-center mt-10">
           {confirmed && (
