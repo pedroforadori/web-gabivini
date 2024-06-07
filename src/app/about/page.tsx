@@ -10,7 +10,7 @@ export default function About() {
             </h1>
             <div className="flex justify-end items-center h-[80vh]  max-sm:flex max-sm:flex-col-reverse max-sm:justify-around 
                             max-md:flex max-md:flex-col-reverse max-md:justify-center ">
-                <div className="relative left-40 max-sm:left-0 max-sm:mx-4 max-md:left-0 max-md:w-1/2">
+                <div className="relative left-40 max-sm:left-0 max-lg:left-0 max-xl:left-0 max-2xl:left-0 max-sm:mx-4 max-md:left-0 max-md:w-1/2 max-lg:w-1/3 max-xl:w-2/5 max-2xl:w-[w-2/5]">
                     <p className="text-marinho font-light"><span className="font-normal">ENDEREÇO: </span> AV. MAL. RONDON, 840 - CENTRO, OSASCO - SP, 06093-010</p>
                     <p className="text-marinho font-light"><span className="font-normal">HORÁRIO: </span>19:30</p>
                     <p className="text-marinho font-light"><span className="font-normal">TRAJE: </span> SOCIAL COMPLETO</p>
@@ -24,7 +24,7 @@ export default function About() {
                     </Link> */}
                         
                 </div>
-                <div className="flex flex-col items-center max-md:w-[300px]">
+                <div className="flex flex-col items-center max-md:w-[300px] max-lg:w-[300px] max-xl:w-[300px] max-2xl:w-[600px]">
                     <Image src={require("../../../public/trem-blue.png")} width={800} alt="trem logo" />
                 </div>
                 
