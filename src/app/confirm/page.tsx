@@ -13,7 +13,7 @@ interface IGuest {
 export default function Confirm() {
   const [name, setName] = useState<string>();
   const [phone, setPhone] = useState<string>();
-  const [confirmed, setConfirmed] = useState<string>("Presença confirmada. Esperamos você!");
+  const [confirmed, setConfirmed] = useState<string>("");
 
   async function confirmGuest(event: FormEvent) {
     event.preventDefault();
