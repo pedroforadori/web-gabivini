@@ -26,7 +26,7 @@ export default [
         image: '/image-gift/magic-kingdon.jpg',
         resume: 'Fireworks Magic Kingdom',
         buy: 'https://mpago.la/23HgRnj',
-        value: 'R$ 500,00'
+        value: 'R$ 1.999,00'
     },
     {
         id: 4,
@@ -81,7 +81,7 @@ export default [
         id: 11,
         image: '/image-gift/animal-kingdom.jpg',
         resume: "Conhecer o Animal Kingdon",
-        buy: 'https://pag.ae/7ZmTcmB4p',
+        buy: 'https://mpago.la/2KwvJpR',
         value: 'R$ 490,00'
     },
     {
@@ -89,7 +89,7 @@ export default [
         image: '/image-gift/epcot.jpg',
         resume: "Conhecer o Epcot",
         buy: 'https://mpago.la/1Ex6yD4',
-        value: 'R$ 510,00'
+        value: 'R$ 2.934,00'
     },
     {
         id: 13,
@@ -123,8 +123,8 @@ export default [
         id: 17,
         image: '/image-gift/locar-carro.jpg',
         resume: "Diária Aluguel do Carro",
-        buy: 'https://mpago.la/2hA2Srb',
-        value: 'R$ 1.000,00'
+        buy: 'https://mpago.la/1hihut8',
+        value: 'R$ 3.580,00'
     },
     {
         id: 18,

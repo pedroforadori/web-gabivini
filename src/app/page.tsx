@@ -10,7 +10,7 @@ export default function Home() {
       </div> */}
       <div className="w-2/5 flex flex-col items-center mt-[-3rem]  max-sm:w-full">
         <div className="text-center max-sm:right-0 max-sm:left-0 z-10">
-          <div className="text-marinho text-[10rem] max-sm:text-8xl max-sm:mb-4 font-modernSymphony">
+          <div className="text-marinho text-[10rem] max-lg:text-8xl max-lg:mb-4 max-sm:text-8xl max-sm:mb-4 font-modernSymphony">
             Gabriela & Vinicius
           </div>
           <div className="text-marinho text-[10px] font-light mb-4 text-justify max-sm:my-8 max-sm:mx-12">
