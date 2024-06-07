@@ -17,7 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
+      <head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
       <body className={josefin.className}>
         <div className="max-sm:flex max-sm:items-start max-sm:w-full max-sm:p-2">
           <Menu />
