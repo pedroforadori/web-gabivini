@@ -16,7 +16,7 @@ export default function Menu() {
       <Link href="/" className="max-sm:hidden absolute">
         <Image src={require("../../public/logo.png")} width={100} alt="logo" />
       </Link>
-      <div className="md:hidden lg:hidden xl:hidden 2xl:hidden">
+      <div className="md:hidden lg:hidden xl:hidden 2xl:hidden fixed z-30">
         {isOpen ? (
           <X color="#005D86" size={32} onClick={openMenu} />
         ) : (
@@ -24,7 +24,6 @@ export default function Menu() {
         )}
       </div>
       <nav className="left-0 top-[35%] ml-4 max-sm:hidden fixed">
-
         <ul className="text-marinho font-light cursor-pointer">
           <Link href="/">
             <li className="mb-8 hover:font-normal">HOME</li>
@@ -42,11 +41,10 @@ export default function Menu() {
         </ul>
       </nav>
       {isOpen && (
-        <nav className="absolute left-0 h-screen bg-white z-20 w-3/4 pl-4 mt-10">
-
+        <nav className="left-0 h-screen bg-white z-20 w-3/4 pl-6 mt-[-2rem] fixed">
           <ul className="text-marinho font-light cursor-pointer ">
             <Link href="/" onClick={() => setIsOpen(false)}>
-              <li className="mb-8 hover:font-normal mx-20">
+              <li className="mb-8 hover:font-normal mx-20 mt-10">
                 <Image src={require("../../public/logo.png")} width={100} alt="logo" />
               </li>
             </Link>
