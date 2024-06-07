@@ -18,7 +18,8 @@ export default function About() {
                     <p className="text-marinho font-light"><span className="font-normal">ENDEREÇO: </span> AV. MAL. RONDON, 840 - CENTRO, OSASCO - SP, 06093-010</p>
                     <p className="text-marinho font-light"><span className="font-normal">HORÁRIO: </span>19:30</p>
                     <p className="text-marinho font-light"><span className="font-normal">TRAJE: </span> SOCIAL COMPLETO</p>
-                    <p className="text-marinho font-light">14.12.2024</p>
+                    <p className="text-marinho font-light"><span className="font-normal">DATA: </span> 14.12.2024</p>
+                    
                     {/* <div className="text-marinho text-xs font-light">
                         <Countdown />
                     </div> */}
@@ -28,7 +29,7 @@ export default function About() {
                     </Link> */}
                         
                 </div>
-                <div className="flex flex-col items-center max-md:w-[300px] max-lg:w-[300px] max-xl:w-[400px] max-2xl:w-[600px]">
+                <div className="flex flex-col items-center max-md:w-[300px] max-lg:w-[300px] max-xl:w-[500px] max-2xl:w-[600px]">
                     <Image src={require("../../../public/trem-blue.png")} width={800} alt="trem logo" />
                 </div>
                 
