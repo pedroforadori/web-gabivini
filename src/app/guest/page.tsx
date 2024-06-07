@@ -36,7 +36,7 @@ async function listGuest() {
 }
 
   return (
-    <div className="grid grid-cols-2 w-2/5 mx-auto max-sm:p-2 bg-marinho p-10 mt-10 rounded-lg bg-opacity-80 
+    <div className="grid grid-cols-2 w-1/2 mx-auto max-sm:p-2 bg-marinho p-10 mt-10 rounded-lg bg-opacity-80 
                     max-sm:flex max-sm:flex-col max-sm:w-full max-sm:mt-0 max-sm:h-screen max-sm:rounded-none">
         <div className="text-wedding-500 text-2xl font-bold max-sm:text-xl">
             Numero de convidados confirmados: {guest?.length}
