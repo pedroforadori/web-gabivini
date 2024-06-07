@@ -98,7 +98,7 @@ export default function CardGift() {
           <div className="mx-10 max-sm:flex-row max-sm:mx-0 max-sm:justify-center max-sm:items-center">
             <Image
               className=""
-              src={require("../../public/qrcode.png")}
+              src={require("/public/qrcode.png")}
               alt="imagem principal"
               width={190}
               quality={100}

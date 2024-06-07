@@ -35,8 +35,10 @@ export default function Menu() {
           <Link href="/confirm" onClick={() => setIsOpen(false)}>
             <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
           </Link>
+          <Link href="/local" onClick={() => setIsOpen(false)}>
+            <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
+          </Link>
 
-          <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
         </ul>
       </nav>
       {isOpen && (
@@ -57,8 +59,10 @@ export default function Menu() {
             <Link href="/confirm" onClick={() => setIsOpen(false)}>
               <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
             </Link>
+            <Link href="/local" onClick={() => setIsOpen(false)}>
+              <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
+            </Link>
 
-            <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
           </ul>
           {/* </motion.div> */}
         </nav>
