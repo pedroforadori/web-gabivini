@@ -8,11 +8,13 @@ export default function About() {
             <h1 className="text-offwhite text-8xl bg-terracota text-center max-sm:mt-7 font-modernSymphony">
                 Sobre a Festa
             </h1>
-            <div className="flex justify-end items-center h-[80vh] max-sm:flex max-sm:flex-col-reverse max-sm:justify-around">
-                <div className="relative left-40 max-sm:left-0 max-sm:mx-4">
+            <div className="flex justify-end items-center h-[80vh]  max-sm:flex max-sm:flex-col-reverse max-sm:justify-around 
+                            max-md:flex max-md:flex-col-reverse max-md:justify-center ">
+                <div className="relative left-40 max-sm:left-0 max-sm:mx-4 max-md:left-0 max-md:w-1/2">
                     <p className="text-marinho font-light"><span className="font-normal">ENDEREÇO: </span> AV. MAL. RONDON, 840 - CENTRO, OSASCO - SP, 06093-010</p>
                     <p className="text-marinho font-light"><span className="font-normal">HORÁRIO: </span>19:30</p>
                     <p className="text-marinho font-light"><span className="font-normal">TRAJE: </span> SOCIAL COMPLETO</p>
+                    <p className="text-marinho font-light">14.12.2024</p>
                     {/* <div className="text-marinho text-xs font-light">
                         <Countdown />
                     </div> */}
@@ -22,9 +24,8 @@ export default function About() {
                     </Link> */}
                         
                 </div>
-                <div className="flex flex-col items-center">
-                    <Image src={require("../../../public/trem.jpeg")} width={800} alt="trem logo" />
-                    <p className="text-marinho font-light">14.12.2024</p>
+                <div className="flex flex-col items-center max-md:w-[300px]">
+                    <Image src={require("../../../public/trem-blue.png")} width={800} alt="trem logo" />
                 </div>
                 
             </div>
