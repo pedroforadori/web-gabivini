@@ -8,15 +8,15 @@ export default function About() {
             <h1 className="text-offwhite text-8xl bg-terracota text-center max-sm:mt-7 font-modernSymphony">
                 Sobre a Festa
             </h1>
-            <div className="flex justify-end items-center h-[80vh]">
-                <div className="relative left-40">
+            <div className="flex justify-end items-center h-[80vh] max-sm:flex max-sm:flex-col-reverse max-sm:justify-around">
+                <div className="relative left-40 max-sm:left-0 max-sm:mx-4">
                     <p className="text-marinho font-light">ENDEREÇO: AV. MAL. RONDON, 840 - CENTRO, OSASCO - SP, 06093-010</p>
                     <p className="text-marinho font-light">HORÁRIO: 19:30</p>
                     <p className="text-marinho font-light">TRAJE: SOCIAL COMPLETO</p>
                     <div className="text-marinho text-xs font-light">
                         <Countdown />
                     </div>
-                    <p className="text-marinho font-light text-2xl mt-10">Como chegar?!</p>
+                    
                     <Link href={"https://waze.com/ul/h6gydpku04"}>
                         <Image src={require("../../../public/waze.png")} width={50} alt="waze logo" />
                     </Link>
