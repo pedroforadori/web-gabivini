@@ -3,9 +3,11 @@ import Link from "next/link";
 import { List, X } from "phosphor-react";
 import { useState } from "react";
 import Image from "next/image";
+import { usePathname } from 'next/navigation'
 
 export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname()
 
   function openMenu() {
     isOpen ? setIsOpen(false) : setIsOpen(true);
@@ -14,7 +16,12 @@ export default function Menu() {
   return (
     <>
       <Link href="/" className="max-sm:hidden absolute">
-        <Image src={require("../../public/logo.png")} width={100} alt="logo" />
+        {pathname === "/" ? (
+          <Image src={require("../../public/logo.png")} width={100} alt="logo" />
+        ) : (
+          <Image src={require("../../public/logo-branco.png")} width={100} alt="logo" />
+        )}
+
       </Link>
       <div className="md:hidden lg:hidden xl:hidden 2xl:hidden fixed z-30">
         {isOpen ? (
@@ -34,8 +41,8 @@ export default function Menu() {
           <Link href="/confirm" onClick={() => setIsOpen(false)}>
             <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
           </Link>
-          <Link href="/local" onClick={() => setIsOpen(false)}>
-            <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
+          <Link href="/about" onClick={() => setIsOpen(false)}>
+            <li className="mb-8 hover:font-normal">SOBRE A FESTA</li>
           </Link>
 
         </ul>
@@ -57,8 +64,8 @@ export default function Menu() {
             <Link href="/confirm" onClick={() => setIsOpen(false)}>
               <li className="mb-8 hover:font-normal">CONFIRME SUA PRESENÇA</li>
             </Link>
-            <Link href="/local" onClick={() => setIsOpen(false)}>
-              <li className="mb-8 hover:font-normal">LOCAL DA FESTA</li>
+            <Link href="/about" onClick={() => setIsOpen(false)}>
+              <li className="mb-8 hover:font-normal">SOBRE A FESTA</li>
             </Link>
 
           </ul>

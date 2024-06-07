@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <head>
-        <link rel="shortcut icon" href="/favicon.ico" />
+        <link rel="shortcut icon" href="/logo-branco.ico" />
       </head>
       <body className={josefin.className}>
         <div className="max-sm:flex max-sm:items-start max-sm:w-full max-sm:p-2">
