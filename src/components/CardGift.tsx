@@ -85,14 +85,6 @@ export default function CardGift() {
       );
   }
 
-  // function copyQr() {
-  //   var copyText = "gabilinsda@gmail.com"
-  //   const links = copyText
-  //   const copylink = (e: any) => {
-  //     navigator.clipboard.writeText(links)
-  //   }
-  // }
-
   return (
     <>
       <div className="text-telha h-auto flex flex-wrap gap-4 my-4 w-3/5 justify-center items-center max-lg:w-1/2 max-sm:w-11/12">
@@ -108,13 +100,13 @@ export default function CardGift() {
               className=""
               src={require("../../public/qrcode.png")}
               alt="imagem principal"
-              width={150}
+              width={190}
               quality={100}
             />
             <button
               // onPress={() => handleOpen(b, item.buy)}
               onClick={copyQr}
-              className="bg-terracota max-sm:px-4 max-sm:py-3"
+              className="bg-terracota max-sm:px-9 max-sm:py-3 max-sm:items-center"
             >
               <p className="text-offwhite font-light">Copiar QR Code</p>
             </button>

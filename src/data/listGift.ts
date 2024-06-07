@@ -23,7 +23,7 @@ export default [
     },
     {
         id: 4,
-        image: '/image-gift/universal-studios.jpg',
+        image: '/image-gift/almoco-universal.jpg',
         resume: 'Almoço na Universal Studios',
         buy: 'https://mpago.la/2ukMkss',
         value: 'R$ 159,00'
