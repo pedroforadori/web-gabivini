@@ -5,14 +5,14 @@ export default [
         image: '/image-gift/almoco-especial.jpg',
         resume: 'Almoço Romântico em Miami',
         buy: 'https://mpago.la/268jWKT',
-        value: 'R$ 230,00'
+        value: 'R$ 330,00'
     },
     {
         id: 2,
         image: '/image-gift/club-miami.jpg',
         resume: 'Night Club em Miami',
         buy: 'https://mpago.la/2R2qeZP',
-        value: 'R$ 200,00'
+        value: 'R$ 300,00'
     },
     {
         id: 3,
@@ -26,7 +26,7 @@ export default [
         image: '/image-gift/almoco-universal.jpg',
         resume: 'Almoço na Universal Studios',
         buy: 'https://mpago.la/2ukMkss',
-        value: 'R$ 159,00'
+        value: 'R$ 269,00'
     },
     {
         id: 5,
@@ -89,21 +89,21 @@ export default [
         image: '/image-gift/presente-gabi.jpeg',
         resume: "Dolares para a Gabi comprar canetas no outlet",
         buy: 'https://mpago.la/1iENrP5',
-        value: 'R$ 200,00'
+        value: 'R$ 399,00'
     },
     {
         id: 14,
         image: '/image-gift/tenis-vini.jpeg',
         resume: "Dolares para o Vini comprar tenis no outlet",
         buy: 'https://mpago.la/2F7S9AX',
-        value: 'R$ 209,00'
+        value: 'R$ 299,00'
     },
     {
         id: 15,
         image: '/image-gift/tiara-minnie.jpeg',
         resume: "Comprar Tiarinha da Minnie Noivinha para Gabi",
         buy: 'https://mpago.la/2Mnf8m2',
-        value: 'R$ 149,00'
+        value: 'R$ 249,00'
     },
     {
         id: 16,
@@ -124,7 +124,14 @@ export default [
         image: '/image-gift/universal-islands.jpg',
         resume: "Conhecer o Island Adventure",
         buy: 'https://mpago.la/222gDpR',
-        value: 'R$ 640,00'
+        value: 'R$ 759,00'
+    },
+    {
+        id: 19,
+        image: '/image-gift/diaria-miami.jpg',
+        resume: '1 Estadia em Miami',
+        buy: 'https://mpago.la/2q5yPPA',
+        value: 'R$ 489,00'
     }
     
 ]
