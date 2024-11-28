@@ -17,7 +17,7 @@ export default function About() {
                                 max-xl:left-20 max-xl:w-2/5 
                                 max-2xl:left-32 max-2xl:w-2/5">
                     <p className="text-marinho font-light"><span className="font-normal">ENDEREÇO: </span> AV. MAL. RONDON, 840 - CENTRO, OSASCO - SP, 06093-010</p>
-                    <p className="text-marinho font-light"><span className="font-normal">HORÁRIO: </span>19:30</p>
+                    <p className="text-marinho font-light"><span className="font-normal">HORÁRIO: </span>20:00</p>
                     <p className="text-marinho font-light"><span className="font-normal">TRAJE: </span>SOCIAL COMPLETO</p>
                     <p className="text-marinho font-light"><span className="font-normal">DATA: </span> 14.12.2024</p>
 
