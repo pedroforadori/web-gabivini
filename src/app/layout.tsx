@@ -26,6 +26,16 @@ export default function RootLayout({
           <Menu />
         </div>
         <Providers>{children}</Providers>
+        <footer className="bg-white py-6 text-center text-xs text-marinho">
+          <a
+            href="https://portfolio-penne.vercel.app/"
+            target="_blank"
+            rel="noopener"
+            className="underline underline-offset-4 hover:opacity-70"
+          >
+            Desenvolvido por Penne · Faça o site do seu casamento conosco
+          </a>
+        </footer>
       </body>
     </html>
   );
