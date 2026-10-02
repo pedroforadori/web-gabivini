@@ -28,7 +28,7 @@ export default function RootLayout({
         <Providers>{children}</Providers>
         <footer className="bg-white py-6 text-center text-xs text-marinho">
           <a
-            href="https://portfolio-penne.vercel.app/"
+            href="https://www.pennecasamentos.com.br/"
             target="_blank"
             rel="noopener"
             className="underline underline-offset-4 hover:opacity-70"
